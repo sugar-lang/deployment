@@ -13,16 +13,23 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../maven-config/pom.xml</relativePath>
 	</parent>
-<!-- 
+	
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
+				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
-				<extensions>true</extensions>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>org.sugarj</groupId>
+							<artifactId>org.sugarj.target-platform</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
- -->
 </project>
