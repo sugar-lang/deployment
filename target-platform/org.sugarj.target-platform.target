@@ -7,7 +7,7 @@
 <repository location="http://download.eclipse.org/releases/juno"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="org.strategoxt.imp.feature.group" version="1.2.0.0-s40914"/>
+<unit id="org.strategoxt.imp.feature.group"/>
 <repository location="http://download.spoofax.org/update/nightly/"/>
 </location>
 </locations>
