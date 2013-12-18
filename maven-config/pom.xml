@@ -5,6 +5,19 @@
 	<groupId>org.sugarj</groupId>
 	<artifactId>org.sugarj.maven-config</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+        <modules>
+          <module>../target-platform</module>
+          <module>../../common</module>
+          <module>../../stdlib</module>
+          <module>../../compiler</module>
+          <module>../../base-lang</module>
+          <module>../../editor</module>
+          <module>../../languages/java</module>
+          <module>../../languages/haskell</module>
+          <module>../../languages/prolog</module>
+        </modules>
 
 	<properties>
 		<java.source.version>1.7</java.source.version>
@@ -12,8 +25,6 @@
 		<tycho-version>0.18.1</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-	<packaging>pom</packaging>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
