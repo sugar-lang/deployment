@@ -17,6 +17,9 @@
           <module>../../languages/java</module>
           <module>../../languages/haskell</module>
           <module>../../languages/prolog</module>
+          <module>../feature-base</module>
+          <module>../feature-java</module>
+          <module>../update-site</module>
         </modules>
 
 	<properties>
