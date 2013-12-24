@@ -16,11 +16,22 @@
 	</parent>
 
 	<build>
-		<resources>
-			<resource>
-				<directory>web</directory>
-			</resource>
-		</resources>
+	  <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-resources-plugin</artifactId>
+              <version>2.6</version>
+            </plugin>
+	  </plugins>
+	  <outputDirectory>${basedir}/bin/repository</outputDirectory>
+	  <resources>
+	    <resource>
+	      <directory>web</directory>
+	      <includes>
+		<include>**</include>
+	      </includes>
+	    </resource>
+	  </resources>
 	</build>
 
 </project>

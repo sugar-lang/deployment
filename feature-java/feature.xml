@@ -2,7 +2,7 @@
 <feature
       id="org.sugarj.java"
       label="SugarJava"
-      version="1.0.0.qualifier"
+      version="1.2.0.qualifier"
       provider-name="sugarj.org">
 
    <description url="http://sugarj.org">
@@ -28,7 +28,7 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
       <import plugin="org.spoofax.terms"/>
       <import plugin="org.strategoxt.strj"/>
       <import plugin="org.sugarj.common"/>
-      <import feature="org.sugarj.base" version="1.0.0.qualifier"/>
+      <import feature="org.sugarj.base"/>
       <import plugin="org.sugarj.baselang"/>
    </requires>
 
@@ -36,7 +36,6 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
          id="org.sugarj.language.java"
          download-size="0"
          install-size="0"
-         version="0.0.0"
-         unpack="true"/>
+         version="0.0.0"/>
 
 </feature>
