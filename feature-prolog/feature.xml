@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.sugarj.prolog"
-      label="SugarProlog"
-      version="1.0.0.qualifier"
+      label="Sugar* Prolog"
+      version="1.2.0.qualifier"
       provider-name="sugarj.org">
 
    <description url="http://sugarj.org">

@@ -17,8 +17,14 @@
           <module>../../languages/java</module>
           <module>../../languages/haskell</module>
           <module>../../languages/prolog</module>
+          <module>../../languages/fomega</module>
+          <module>../../languages/javascript/language-libraries/javascript</module>
           <module>../feature-base</module>
           <module>../feature-java</module>
+          <module>../feature-haskell</module>
+          <module>../feature-prolog</module>
+          <module>../feature-fomega</module>
+          <module>../feature-javascript</module>
           <module>../update-site</module>
         </modules>
 

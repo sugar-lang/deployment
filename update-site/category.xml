@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature id="org.sugarj.base">
+      <category name="org.sugarj"/>
    </feature>
    <feature id="org.sugarj.java">
+      <category name="org.sugarj"/>
+   </feature>
+   <feature id="org.sugarj.haskell">
+      <category name="org.sugarj"/>
+   </feature>
+   <feature id="org.sugarj.prolog">
       <category name="org.sugarj"/>
    </feature>
    <category-def name="org.sugarj" label="SugarJ"/>
