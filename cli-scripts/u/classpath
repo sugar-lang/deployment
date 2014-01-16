@@ -2,21 +2,24 @@
 # cai 17.08.12
 # script to print classpath
 
+# requires STRATEGO_JAR
+strategojar=`echo $STRATEGO_JAR`
+
+
 # find base directory of sugarj
 sugarj="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../../.." && pwd )"
 script="$sugarj/deployment/cli-scripts"
+base="$sugarj/base-lang/bin"
 common="$sugarj/common/bin"
 compiler="$sugarj/compiler/bin"
 stdlib="$sugarj/stdlib/bin"
-layout="$sugarj/layout-parsing/jsglr-layout/bin"
 cliroot="$sugarj/compiler"
-strategojar=`echo $STRATEGO_JAR`
 clijars="$strategojar:$cliroot/make_permissive.jar:$cliroot/commons-cli-1.2.jar"
-langroot="$sugarj/language-libraries"
-langlibs="$langroot/base/bin:$langroot/haskell/bin:$langroot/java/bin:$langroot/prolog/bin"
+langroot="$sugarj/languages"
+langlibs="$langroot/haskell/bin:$langroot/java/bin:$langroot/prolog/bin"
 
 # essential paths
-classpath="$compiler:$clijars:$common:$stdlib:$langlibs:$layout"
+classpath="$compiler:$clijars:$base:$common:$stdlib:$langlibs"
 
 # what we try to combine
 # somehow the nativebundle does not cooperate no matter what I do with it
