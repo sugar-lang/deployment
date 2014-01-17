@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.sugarj</groupId>
-	<artifactId>org.sugarj.fomega</artifactId>
+	<artifactId>org.sugarj.feature.fomega</artifactId>
 	<version>1.2.0-SNAPSHOT</version>
 	<packaging>eclipse-feature</packaging>
 

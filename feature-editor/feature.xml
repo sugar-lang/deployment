@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.sugarj.editor"
+      id="org.sugarj.feature.editor"
       label="Sugar* Editor"
       version="1.2.0.qualifier">
 
@@ -15,5 +15,9 @@
    <license url="http://www.example.com/license">
       [Enter License Description here.]
    </license>
+
+   <requires>
+      <import feature="org.sugarj.feature.base" version="1.2.0.qualifier"/>
+   </requires>
 
 </feature>

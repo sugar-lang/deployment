@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.sugarj.base"
+      id="org.sugarj.feature.base"
       label="Sugar* Base"
       version="1.2.0.qualifier"
       provider-name="sugarj.org">

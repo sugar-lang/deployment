@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature id="org.sugarj.base">
+   <feature id="org.sugarj.feature.base">
       <category name="org.sugarj"/>
    </feature>
-   <feature id="org.sugarj.java">
+   <feature id="org.sugarj.feature.editor">
       <category name="org.sugarj"/>
    </feature>
-   <feature id="org.sugarj.haskell">
+   <feature id="org.sugarj.feature.java">
       <category name="org.sugarj"/>
    </feature>
-   <feature id="org.sugarj.prolog">
+   <feature id="org.sugarj.feature.haskell">
       <category name="org.sugarj"/>
    </feature>
-   <category-def name="org.sugarj" label="SugarJ"/>
+   <feature id="org.sugarj.feature.prolog">
+      <category name="org.sugarj"/>
+   </feature>
+   <category-def name="org.sugarj" label="Sugar*"/>
 </site>

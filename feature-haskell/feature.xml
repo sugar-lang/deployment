@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.sugarj.haskell"
+      id="org.sugarj.feature.haskell"
       label="Sugar* Haskell"
       version="1.2.0.qualifier"
       provider-name="sugarj.org">
@@ -23,13 +23,7 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
    </url>
 
    <requires>
-      <import plugin="org.eclipse.ui"/>
-      <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.sugarj.common"/>
-      <import plugin="org.spoofax.terms"/>
-      <import plugin="org.strategoxt.strj"/>
-      <import feature="org.sugarj.base" version="1.0.0.qualifier"/>
-      <import plugin="org.sugarj.baselang"/>
+      <import feature="org.sugarj.feature.base" version="1.2.0.qualifier"/>
    </requires>
 
    <plugin
