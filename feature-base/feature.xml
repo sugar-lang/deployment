@@ -55,12 +55,6 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
          unpack="false"/>
 
    <plugin
-         id="org.sugarj.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
          id="org.sugarj.stdlib"
          download-size="0"
          install-size="0"

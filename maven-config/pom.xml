@@ -20,6 +20,7 @@
           <module>../../languages/fomega</module>
           <module>../../languages/javascript/language-libraries/javascript</module>
           <module>../feature-base</module>
+          <module>../feature-editor</module>
           <module>../feature-java</module>
           <module>../feature-haskell</module>
           <module>../feature-prolog</module>
