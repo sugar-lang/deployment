@@ -24,6 +24,7 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
 
    <requires>
       <import feature="org.sugarj.feature.base" version="1.2.0.qualifier"/>
+      <import feature="org.sugarj.feature.editor" version="1.2.0.qualifier"/>
    </requires>
 
    <plugin
