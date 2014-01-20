@@ -15,5 +15,11 @@
    <feature id="org.sugarj.feature.prolog">
       <category name="org.sugarj"/>
    </feature>
+   <feature id="org.sugarj.feature.javascript">
+      <category name="org.sugarj"/>
+   </feature>
+   <feature id="org.sugarj.feature.scala">
+      <category name="org.sugarj"/>
+   </feature>
    <category-def name="org.sugarj" label="Sugar*"/>
 </site>
