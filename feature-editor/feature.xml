@@ -20,4 +20,11 @@
       <import feature="org.sugarj.feature.base" version="1.2.0.qualifier"/>
    </requires>
 
+   <plugin
+         id="org.sugarj.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
 </feature>
