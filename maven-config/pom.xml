@@ -32,8 +32,8 @@
         </modules>
 
 	<properties>
-		<java.source.version>1.6</java.source.version>
-		<java.binary.version>1.6</java.binary.version>
+		<java.source.version>1.7</java.source.version>
+		<java.binary.version>1.7</java.binary.version>
 		<tycho-version>0.18.1</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
