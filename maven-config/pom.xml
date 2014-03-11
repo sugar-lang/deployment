@@ -29,6 +29,7 @@
           <module>../feature-javascript</module>
           <module>../feature-scala</module>
           <module>../update-site</module>
+		  <module>../../test-java</module>
         </modules>
 
 	<properties>
