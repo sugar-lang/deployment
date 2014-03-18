@@ -6,7 +6,7 @@
       provider-name="sugarj.org">
 
    <description url="http://sugarj.org">
-      SugarFomega and Sugarclipse
+      Sugar Dryad - A Language Library that compiles Java, Bytecode and a mixture of both to JVM compatible class files
    </description>
 
    <copyright>
