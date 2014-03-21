@@ -14,12 +14,15 @@
           <module>../../compiler</module>
           <module>../../base-lang</module>
           <module>../../editor</module>
+
           <module>../../languages/java</module>
           <module>../../languages/haskell</module>
           <module>../../languages/prolog</module>
           <module>../../languages/fomega</module>
           <module>../../languages/javascript/language-libraries/javascript</module>
           <module>../../languages/scala</module>
+          <module>../../languages/dryad/languages/dryad</module>
+
           <module>../feature-base</module>
           <module>../feature-editor</module>
           <module>../feature-java</module>
@@ -28,8 +31,11 @@
           <module>../feature-fomega</module>
           <module>../feature-javascript</module>
           <module>../feature-scala</module>
+          <module>../feature-dryad</module>
+
           <module>../update-site</module>
-		  <module>../../test-java</module>
+
+	  <module>../../test-java</module>
         </modules>
 
 	<properties>
