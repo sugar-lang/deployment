@@ -35,7 +35,8 @@
 
           <module>../update-site</module>
 
-	  <module>../../test-java</module>
+          <module>../../test-java</module>
+		  <module>../../case-studies/pairs</module>
         </modules>
 
 	<properties>
