@@ -37,6 +37,7 @@
 
           <module>../../test-java</module>
 		  <module>../../case-studies/pairs</module>
+		  <module>../../case-studies/closures</module>
         </modules>
 
 	<properties>
