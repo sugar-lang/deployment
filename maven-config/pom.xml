@@ -38,6 +38,8 @@
           <module>../../test-java</module>
 		  <module>../../case-studies/pairs</module>
 		  <module>../../case-studies/closures</module>
+		  <module>../../case-studies/xml</module>
+		  <module>../../case-studies/questionnaire-language</module>
         </modules>
 
 	<properties>
