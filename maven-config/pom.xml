@@ -41,6 +41,7 @@
 		  <module>../../case-studies/xml</module>
 		  <module>../../case-studies/questionnaire-language</module>
 		  <module>../../case-studies/string-interpolation</module>
+		  <module>../../case-studies/case-classes</module>
         </modules>
 
 	<properties>
