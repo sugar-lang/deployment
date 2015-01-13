@@ -21,7 +21,7 @@
           <module>../../languages/fomega</module>
           <module>../../languages/javascript/language-libraries/javascript</module>
           <module>../../languages/scala</module>
-          <module>../../languages/dryad/languages/dryad</module>
+          <!-- <module>../../languages/dryad/languages/dryad</module> -->
 
           <module>../feature-base</module>
           <module>../feature-editor</module>
@@ -31,7 +31,7 @@
           <module>../feature-fomega</module>
           <module>../feature-javascript</module>
           <module>../feature-scala</module>
-          <module>../feature-dryad</module>
+          <!-- <module>../feature-dryad</module> -->
 
           <module>../update-site</module>
 
