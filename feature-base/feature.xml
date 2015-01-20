@@ -26,6 +26,10 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
          id="org.strategoxt.imp"
          version="0.0.0"/>
 
+   <includes
+         id="org.strategoxt.imp.meta"
+         version="0.0.0"/>
+
    <requires>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
