@@ -10,6 +10,7 @@
         <modules>
           <module>../target-platform</module>
 		  <module>../../cleardep</module>
+		  <module>../../cleardep.test</module>
           <module>../../common</module>
           <module>../../stdlib</module>
           <module>../../compiler</module>
@@ -35,7 +36,7 @@
           <!-- <module>../feature-dryad</module> -->
 
           <module>../update-site</module>
-
+		  
           <module>../../test-java</module>
 		  <module>../../case-studies/pairs</module>
 		  <module>../../case-studies/closures</module>
