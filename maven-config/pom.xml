@@ -9,7 +9,8 @@
 
         <modules>
           <module>../target-platform</module>
-		  <module>../../cleardep</module>
+          <module>../../common</module>
+          <module>../../cleardep</module>
           <module>../../common</module>
           <module>../../stdlib</module>
           <module>../../compiler</module>
