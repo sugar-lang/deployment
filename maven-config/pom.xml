@@ -9,9 +9,9 @@
 
         <modules>
           <module>../target-platform</module>
+          <module>../../common</module>
 		  <module>../../cleardep</module>
 		  <module>../../cleardep.test</module>
-          <module>../../common</module>
           <module>../../stdlib</module>
           <module>../../compiler</module>
           <module>../../base-lang</module>
