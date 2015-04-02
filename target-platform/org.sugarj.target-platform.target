@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="Sugar* target" sequenceNumber="23">
+<?pde version="3.8"?><target name="Sugar* target" sequenceNumber="25">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="org.strategoxt.imp.meta.feature.group" version="0.0.0"/>
-<unit id="org.strategoxt.imp.feature.group" version="0.0.0"/>
+<unit id="org.strategoxt.imp.meta.feature.group" version="1.5.0.20150402-120502-master"/>
+<unit id="org.strategoxt.imp.feature.group" version="1.5.0.20150402-120502-master"/>
 <repository location="http://download.spoofax.org/update/nightly/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="org.eclipse.sdk.ide" version="4.2.2.M20130204-1200"/>
-<unit id="org.eclipse.platform.sdk" version="4.2.2.M20130204-1200"/>
-<repository location="http://download.eclipse.org/releases/juno"/>
+<unit id="org.eclipse.rcp.sdk.id" version="4.4.2.M20150204-1700"/>
+<unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.9.1.v20150129-0838"/>
+<repository location="http://download.eclipse.org/releases/luna"/>
 </location>
 </locations>
 <environment>
