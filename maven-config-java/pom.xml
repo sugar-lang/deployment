@@ -51,7 +51,7 @@
 		<java.binary.version>1.7</java.binary.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		
-		<manifest-location>META-INF</manifest-location>
+		<manifest-location>${project.build.outputDirectory}/META-INF</manifest-location>
     <forceContextQualifier>qualifier</forceContextQualifier>
 	</properties>
 
