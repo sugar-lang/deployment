@@ -7,7 +7,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-        <modules>
+        <!-- <modules>
           <module>../target-platform</module>
           <module>../../common</module>
           <module>../../cleardep</module>
@@ -23,7 +23,7 @@
           <module>../../languages/fomega</module>
           <module>../../languages/javascript/language-libraries/javascript</module>
           <module>../../languages/scala</module>
-          <!-- <module>../../languages/dryad/languages/dryad</module> -->
+          <module>../../languages/dryad/languages/dryad</module>
 
           <module>../feature-base</module>
           <module>../feature-editor</module>
@@ -33,7 +33,7 @@
           <module>../feature-fomega</module>
           <module>../feature-javascript</module>
           <module>../feature-scala</module>
-          <!-- <module>../feature-dryad</module> -->
+          <module>../feature-dryad</module>
 
           <module>../update-site</module>
 
@@ -44,12 +44,15 @@
 		  <module>../../case-studies/questionnaire-language</module>
 		  <module>../../case-studies/string-interpolation</module>
 		  <module>../../case-studies/case-classes</module>
-        </modules>
+        </modules> -->
 
 	<properties>
 		<java.source.version>1.7</java.source.version>
 		<java.binary.version>1.7</java.binary.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<manifest-location>META-INF</manifest-location>
+    <forceContextQualifier>qualifier</forceContextQualifier>
 	</properties>
 
 	<build>
