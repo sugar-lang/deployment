@@ -57,8 +57,6 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<directory>bin</directory>
-		<outputDirectory>bin</outputDirectory>
 		
 		<resources>
 			<resource>
