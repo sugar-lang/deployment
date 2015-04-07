@@ -1,0 +1,193 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.sugarj</groupId>
+	<artifactId>maven-config-eclipse</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<!-- <modules> <module>../target-platform</module> <module>../../common</module> 
+		<module>../../cleardep</module> <module>../../cleardep.test</module> <module>../../stdlib</module> 
+		<module>../../compiler</module> <module>../../base-lang</module> <module>../../editor</module> 
+		<module>../../languages/java</module> <module>../../languages/haskell</module> 
+		<module>../../languages/prolog</module> <module>../../languages/fomega</module> 
+		<module>../../languages/javascript/language-libraries/javascript</module> 
+		<module>../../languages/scala</module> <module>../../languages/dryad/languages/dryad</module> 
+		<module>../feature-base</module> <module>../feature-editor</module> <module>../feature-java</module> 
+		<module>../feature-haskell</module> <module>../feature-prolog</module> <module>../feature-fomega</module> 
+		<module>../feature-javascript</module> <module>../feature-scala</module> 
+		<module>../feature-dryad</module> <module>../update-site</module> <module>../../test-java</module> 
+		<module>../../case-studies/pairs</module> <module>../../case-studies/closures</module> 
+		<module>../../case-studies/xml</module> <module>../../case-studies/questionnaire-language</module> 
+		<module>../../case-studies/string-interpolation</module> <module>../../case-studies/case-classes</module> 
+		</modules> -->
+
+	<properties>
+		<java.source.version>1.7</java.source.version>
+		<java.binary.version>1.7</java.binary.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<tycho-version>0.20.0</tycho-version>
+		<test-workspace-location>${project.build.directory}/work</test-workspace-location>
+	</properties>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-compiler-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<compilerArgument>-warn:-discouraged,forbidden,deprication,raw,unchecked,typeHiding,serial,unusedImport</compilerArgument>
+					<compilerArgument>-err:-forbidden</compilerArgument>
+					<source>${java.source.version}</source>
+					<target>${java.target.version}</target>
+					<debug>true</debug>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<strictBinIncludes>false</strictBinIncludes>
+					<archiveSite>true</archiveSite>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<pomDependencies>consider</pomDependencies>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<useUIHarness>true</useUIHarness>
+					<useUIThread>true</useUIThread>
+					<argLine>-Xmx512m -Xms256m -Xss16m -XX:MaxPermSize=256m -server
+						${ui.test.vmargs}</argLine>
+					<work>${test-workspace-location}</work>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>eclipse-luna</id>
+			<layout>p2</layout>
+			<url>http://eclipse.mirror.triple-it.nl/releases/luna/</url>
+		</repository>
+		<repository>
+			<id>metaborg-nexus-snapshots</id>
+			<url>http://artifacts.metaborg.org/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>metaborg-nexus-releases</id>
+			<url>http://artifacts.metaborg.org/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spoofax-nightly</id>
+			<url>http://download.spoofax.org/update/nightly/</url>
+			<layout>p2</layout>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<profiles>
+		<profile>
+			<id>macosx</id>
+			<activation>
+				<os>
+					<family>mac</family>
+				</os>
+			</activation>
+			<properties>
+				<ui.test.vmargs>-XstartOnFirstThread</ui.test.vmargs>
+			</properties>
+		</profile>
+		<profile>
+			<id>not-macosx</id>
+			<activation>
+				<os>
+					<family>!mac</family>
+				</os>
+			</activation>
+			<properties>
+				<ui.test.vmargs></ui.test.vmargs>
+			</properties>
+		</profile>
+	</profiles>
+
+</project>
