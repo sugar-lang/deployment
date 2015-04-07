@@ -93,7 +93,7 @@
 				  <manifestLocation>${manifest-location}</manifestLocation>
 					<instructions>
 						<!-- Fix names not to include the groupId. -->
-						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Name>${project.artifactId}</Bundle-Name>
 						<!-- Replace SNAPSHOT in the manifest version with given qualifier. -->
 						<Bundle-Version>$(replace;${project.version};-SNAPSHOT;.${forceContextQualifier})</Bundle-Version>
