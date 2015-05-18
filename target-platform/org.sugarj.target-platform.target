@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="Sugar* target" sequenceNumber="27">
+<?pde version="3.8"?><target name="Sugar* target" sequenceNumber="32">
 <locations>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
-<unit id="org.strategoxt.imp.meta.feature.group" version="1.5.0.20150407-133423-master"/>
-<unit id="org.strategoxt.imp.feature.group" version="1.5.0.20150407-133423-master"/>
-<repository location="http://download.spoofax.org/update/nightly/"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.sdk.feature.group" version="4.4.2.v20150204-1700"/>
+<unit id="org.eclipse.sdk.ide" version="4.4.2.M20150204-1700"/>
 <unit id="org.eclipse.platform.sdk" version="4.4.2.M20150204-1700"/>
 <repository location="http://download.eclipse.org/releases/luna"/>
 </location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.strategoxt.imp.meta.feature.group" version="1.4.0"/>
+<unit id="org.strategoxt.imp.feature.group" version="1.4.0"/>
+<repository location="http://download.spoofax.org/update/stable/"/>
+</location>
 </locations>
 <environment>
-<os>macosx</os>
-<ws>cocoa</ws>
-<arch>x86_64</arch>
 <nl>en_US</nl>
 </environment>
 <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
