@@ -21,8 +21,8 @@
    <feature id="org.sugarj.feature.scala">
       <category name="org.sugarj"/>
    </feature>
-  <!-- <feature id="org.sugarj.feature.dryad">
+   <feature id="org.sugarj.feature.soundx">
       <category name="org.sugarj"/>
-   </feature> -->
+   </feature>
    <category-def name="org.sugarj" label="Sugar*"/>
 </site>
