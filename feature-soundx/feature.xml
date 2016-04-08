@@ -28,7 +28,7 @@ The SugarJ standard library is released under the GNU GENERAL PUBLIC LICENSE, Ve
    </requires>
 
    <plugin
-         id="org.sugarj.language.haskell"
+         id="org.sugarj.language.soundx"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
